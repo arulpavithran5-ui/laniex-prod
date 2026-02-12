@@ -1,41 +1,149 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Laniex Technologies | Innovative Software Solutions</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
 
-<header>
-    <img src="images/laniex-logo.png" alt="Laniex Technologies Logo" class="logo">
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="projects.html">Projects</a>
-        <a href="contact.html">Contact</a>
-    </nav>
-</header>
+body {
+  background: #ffffff;
+  color: #222;
+}
 
-<section class="hero">
-    <h1>Building Smart Digital Solutions</h1>
-    <p>Laniex Technologies delivers reliable, scalable, and secure software solutions for modern businesses.</p>
-</section>
+/* ===== HEADER ===== */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 90px;
+  border-bottom: 1px solid #eee;
+}
 
-<section class="services">
-    <h2>Our Services</h2>
-    <ul>
-        <li>Custom Software Development</li>
-        <li>Android & Web Application Development</li>
-        <li>ERP & Business Automation Solutions</li>
-        <li>Identity & Access Management (IAM)</li>
-        <li>Cloud & Security Solutions</li>
-    </ul>
-</section>
+header img {
+  height: 42px;
+}
 
-<footer>
-    <p>© 2026 Laniex Technologies. All Rights Reserved.</p>
-</footer>
+nav a {
+  margin-left: 28px;
+  text-decoration: none;
+  font-weight: 500;
+  color: #333;
+}
 
-</body>
-</html>
+nav a:hover {
+  color: #5a45ff;
+}
+
+/* ===== HERO ===== */
+.hero {
+  padding: 120px 20px;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 52px;
+  font-weight: 700;
+  background: linear-gradient(90deg, #1e90ff, #7a3ff0);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.hero p {
+  margin-top: 25px;
+  font-size: 19px;
+  color: #555;
+  max-width: 720px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero button {
+  margin-top: 40px;
+  padding: 16px 42px;
+  border-radius: 30px;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  color: white;
+  background: linear-gradient(90deg, #1e90ff, #7a3ff0);
+}
+
+/* ===== SECTIONS ===== */
+.section {
+  padding: 90px 110px;
+}
+
+.section h2 {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 60px;
+}
+
+/* ===== SERVICES ===== */
+.services {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 35px;
+}
+
+.service-card {
+  padding: 40px;
+  border-radius: 16px;
+  border: 1px solid #eee;
+  transition: 0.3s;
+}
+
+.service-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.06);
+}
+
+.service-card h3 {
+  margin-bottom: 16px;
+  color: #4b3cff;
+}
+
+/* ===== CTA ===== */
+.cta {
+  text-align: center;
+  padding: 100px 20px;
+  background: linear-gradient(90deg, #1e90ff, #7a3ff0);
+  color: white;
+}
+
+.cta h2 {
+  font-size: 38px;
+}
+
+.cta p {
+  margin-top: 18px;
+  font-size: 18px;
+}
+
+.cta button {
+  margin-top: 35px;
+  padding: 16px 42px;
+  border-radius: 30px;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  color: #333;
+}
+
+/* ===== FOOTER ===== */
+footer {
+  padding: 40px;
+  text-align: center;
+  border-top: 1px solid #eee;
+  color: #666;
+}
+
+/* ===== MOBILE ===== */
+@media (max-width: 900px) {
+  header {
+    flex-direction: column;
+  }
+  nav {
+    margin-top: 15px;
+  }
+}
