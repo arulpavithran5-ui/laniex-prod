@@ -9,17 +9,16 @@
 body {
   font-family: 'Inter', sans-serif;
   background: #0b0d10;
-  color: #fff;
+  color: #ffffff;
 }
 
-/* ================= HEADER ================= */
-
+/* HEADER */
 .header {
   position: fixed;
   top: 0;
   width: 100%;
   height: 80px;
-  background: rgba(11,13,16,0.7);
+  background: rgba(11,13,16,0.75);
   backdrop-filter: blur(10px);
   z-index: 1000;
 }
@@ -34,14 +33,11 @@ body {
   justify-content: space-between;
 }
 
-.brand img,
 .logo {
   height: 56px;
-  transition: 0.3s ease;
 }
 
-/* ================= NAV ================= */
-
+/* NAV */
 .nav {
   display: flex;
   align-items: center;
@@ -59,15 +55,14 @@ body {
   color: #4da3ff;
 }
 
-/* ================= DROPDOWN ================= */
-
+/* DROPDOWN */
 .nav-dropdown {
   position: relative;
 }
 
 .dropdown {
   position: absolute;
-  top: 120%;
+  top: 130%;
   left: 0;
   background: #11141a;
   min-width: 260px;
@@ -79,7 +74,7 @@ body {
 
 .dropdown a {
   display: block;
-  padding: 1212px 18px;
+  padding: 12px 18px;
   color: #e5e7eb;
   font-size: 14px;
   text-decoration: none;
@@ -94,20 +89,12 @@ body {
   display: block;
 }
 
-/* ================= HERO ================= */
-
+/* HERO */
 .hero {
-  min-height: 85vh;          /* 🔑 FIX */
+  min-height: 85vh;
   padding-top: 120px;
-  padding-bottom: 80px;
   text-align: center;
-
-  background: radial-gradient(
-    circle at center,
-    rgba(77,163,255,0.18),
-    #0b0d10 70%
-  );
-
+  background: radial-gradient(circle at center, rgba(77,163,255,0.18), #0b0d10 70%);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -128,8 +115,18 @@ body {
   opacity: 0.85;
 }
 
-/* ================= SECTIONS ================= */
+/* CTA */
+.cta {
+  margin-top: 2rem;
+  padding: 14px 36px;
+  border-radius: 40px;
+  background: #4da3ff;
+  color: #000;
+  font-weight: 600;
+  text-decoration: none;
+}
 
+/* SECTIONS */
 .section {
   padding: 5rem 10%;
 }
@@ -138,8 +135,21 @@ body {
   background: #11141a;
 }
 
-/* ================= FOOTER ================= */
+/* CARDS */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+}
 
+.card {
+  background: #151a26;
+  padding: 2rem;
+  border-radius: 16px;
+}
+
+/* FOOTER */
 footer {
   text-align: center;
   padding: 24px;
