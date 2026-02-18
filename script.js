@@ -1,4 +1,3 @@
-// Header shrink on scroll
 const header = document.querySelector('.header');
 const logo = document.querySelector('.logo');
 
