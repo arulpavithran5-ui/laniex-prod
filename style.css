@@ -13,6 +13,30 @@ body {
   line-height: 1.6;
 }
 
+/* HEADER */
+.header {
+  position: fixed;
+  top: 24px;
+  left: 10%;
+  z-index: 100;
+  transition: all 0.3s ease;
+}
+
+.logo {
+  height: 64px;               /* Big on load */
+  transition: all 0.3s ease;
+}
+
+/* Shrink on scroll */
+.header.scrolled {
+  top: 12px;
+}
+
+.header.scrolled .logo {
+  height: 44px;
+  opacity: 0.9;
+}
+
 /* HERO */
 .hero {
   height: 100vh;
@@ -142,5 +166,13 @@ footer {
 @media (max-width: 768px) {
   .section {
     padding: 4rem 6%;
+  }
+
+  .logo {
+    height: 52px;
+  }
+
+  .header.scrolled .logo {
+    height: 40px;
   }
 }
