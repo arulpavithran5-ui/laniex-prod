@@ -145,9 +145,11 @@ body {
   color: #000;
   font-weight: 600;
   text-decoration: none;
-
+  
   display: inline-block;   /* NOT flex */
   width: auto;             /* force auto width */
+  align-self: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .cta:hover {
