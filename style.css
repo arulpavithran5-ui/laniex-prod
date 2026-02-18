@@ -110,11 +110,11 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;   /* IMPORTANT */
+  align-items: center;   /* center horizontally */
   text-align: center;
   background: radial-gradient(
     circle at center,
-    rgba(77, 163, 255, 0.18),
+    rgba(77,163,255,0.18),
     #0b0d10 70%
   );
 }
@@ -146,14 +146,8 @@ body {
   font-weight: 600;
   text-decoration: none;
 
-  /* 🔑 THESE LINES FIX FULL-WIDTH ISSUE */
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: auto;
-  max-width: fit-content;
-
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: inline-block;   /* NOT flex */
+  width: auto;             /* force auto width */
 }
 
 .cta:hover {
